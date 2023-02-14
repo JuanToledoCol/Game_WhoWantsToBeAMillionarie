@@ -1,0 +1,158 @@
+/*Container question*/
+.container_question {
+  width: 100%;
+  height: 12vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "question";
+margin-bottom: 10px;
+}
+
+/*Section Question*/
+.question {
+  grid-area: question;
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/images/bg-question.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.question h2 {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Section Answers*/
+.container_answers {
+  width: 100%;
+  height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "answer1 answer2"
+    "answer3 answer4";
+  grid-column-gap: 0px;
+}
+
+.answer1 {
+  grid-area: answer1;
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/images/bg-option-left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  right: 0px;
+  cursor: pointer;
+}
+
+.answer2 {
+  grid-area: answer2;
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/images/bg-option-right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  cursor: pointer;
+}
+
+.answer3 {
+  grid-area: answer3;
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/images/bg-option-left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  cursor: pointer;
+}
+
+.answer4 {
+  grid-area: answer4;
+  width: 100%;
+  height: auto;
+  background-image: url(../assets/images/bg-option-right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  cursor: pointer;
+}
+
+.select_le:hover {
+  background-image: url(../assets/images/bg-option-left-hover.png);
+}
+
+.select_ri:hover {
+  background-image: url(../assets/images/bg-option-right-hover.png);
+}
+
+.select_le:active {
+  background-image: url(../assets/images/bg-option-left-wrong.png);
+}
+
+.select_ri:active {
+  background-image: url(../assets/images/bg-option-right-wrong.png);
+}
+
+.select_le:enabled {
+  background-image: url(../assets/images/bg-option-left-wrong.png);
+}
+
+/*Style Text*/
+.ans1 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  height: 100%;
+  margin-left: calc(100% - 80%);
+  align-items: center;
+}
+
+.ans3 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  height: 100%;
+  margin-left: calc(100% - 80%);
+  align-items: center;
+}
+
+.ans2 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  height: 100%;
+  margin-left: calc(100% - 90%);
+  align-items: center;
+}
+
+.ans4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  height: 100%;
+  margin-left: calc(100% - 90%);
+  align-items: center;
+}
+
+.vineta {
+  color: orangered;
+}

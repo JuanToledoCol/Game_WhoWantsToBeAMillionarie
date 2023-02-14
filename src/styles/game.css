@@ -1,0 +1,96 @@
+/*Container Game*/
+.container_game {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #010756,
+    #2139b7,
+    #040837
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #010756,
+    #2139b7,
+    #040837
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*Container Logo*/
+.container_logo_game{
+  width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.logo_game {
+  width: 30%;
+  border-radius: 30px;
+}
+
+/*Container Comodines*/
+.container_comodin {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-align: right;
+  justify-content: center;
+}
+
+.bg_icon {
+  background-color: #05072d;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  fill: #fff;
+}
+
+.bg_icon:hover{
+  background-color: #010756;
+}
+
+.comodin_phone {
+  width: 80px;
+  height: 80px;
+}
+
+.comodin_public {
+  width: 80px;
+  height: 80px;
+}
+
+.comodin_50 {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+
+/*Container Money and exit*/
+.container_money {
+  width: 50%;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  text-align: left;
+}
+
+.money {
+  width: 80px;
+  height: 80px;
+}
+
+.exit {
+  width: 80px;
+  height: 80px;
+  transform: perspective(1px) rotateY(180deg);
+}
