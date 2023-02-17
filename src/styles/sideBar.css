@@ -1,0 +1,46 @@
+*{
+    transition: all 0.5s ease;
+}
+
+body{
+    background-color: #010857;  
+}
+
+.sidebar{
+    position: absolute;
+    width: 20%;
+    height: 100vh;
+    background: #010857;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid #5187c7;
+    border-radius: 30px;
+}
+
+.sidebar_titulo{
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 3px solid #5187c7;
+    background-color: #1f191a;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.sidebar_acumulado{
+    width: 80%;
+}
+
+.sidebar_acumulado p{
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #5187c7;
+    background-color: #1f191a; 
+    text-align: center;
+    margin: 7px 0;
+    padding: 4px 0;
+}
