@@ -1,7 +1,6 @@
 //imports
+import { Howl } from 'howler';
 import { useEffect, useState } from 'react';
-import ReactHowler from 'react-howler';
-import { Howl, Howler } from 'howler';
 //import Styles
 import '../styles/question.css';
 //import Images
@@ -12,11 +11,13 @@ import CorrectRi from '../assets/images/bg-option-right-correct.png';
 //import Audio
 import audioWin from '../assets/sounds/win.mp3';
 import audioLose from '../assets/sounds/lose.mp3';
+import audioWho from '../assets/sounds/who-was-correct.mp3';
 
-export default function Question({ quest, handleNextQuestion, soundBg }) {
+export default function Question({ quest, handleNextQuestion, soundBg, recibeClick }) {
 
     //Variables
     const { question, answers } = quest;
+    const verifyClick = true;
 
     const soundWin = new Howl({
         src: [audioWin],
@@ -31,7 +32,21 @@ export default function Question({ quest, handleNextQuestion, soundBg }) {
         loop: false
     })
 
-    soundBg.play();
+    const soundWho = new Howl({
+        src: [audioWho],
+        playing: false,
+        volume: 0.05,
+        loop: false,
+    })
+
+    useEffect(() => {
+        soundBg.play();
+        if(soundBg.playing() === true){
+            soundBg.stop();
+        }else{
+            soundBg.play();
+        }
+    }, [soundBg]);
 
     //Functions
     function handleSelectAnswer(e) {
@@ -54,6 +69,7 @@ export default function Question({ quest, handleNextQuestion, soundBg }) {
     }
 
     function handleSelected(id, ansCorrect) {
+        soundWho.play();
         switch (id) {
             case '1':
                 document.getElementById('ans1').style.backgroundImage = `url(${selectedLE})`;
@@ -193,12 +209,12 @@ export default function Question({ quest, handleNextQuestion, soundBg }) {
 
     return (
         <>
-            <div className='container_question' >
+            <div className='container_question'>
                 <div className='question'>
                     <h2>{question}</h2>
                 </div>
             </div>
-            <div className='container_answers' onClick={handleSelectAnswer}>
+            <div className='container_answers' onClick={(e) => {handleSelectAnswer(e); recibeClick(verifyClick);}} id='container_answers'>
                 {
                     answers.map(({ id, answer, correct }) => {
                         switch (id) {

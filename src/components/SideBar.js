@@ -16,7 +16,7 @@ export default function SideBar() {
             <div className="sidebar_acumulado"  id='acumulado'>
                 {
                     premios.map((premio) => (
-                        <p key={premio.id} accessKey={premio.id}>$ {premio.nombre}</p>
+                        <p key={premio.id} accessKey={premio.id}>{premio.id} -&gt; ${premio.nombre}</p>
                     ))
                 }
             </div>
