@@ -52,7 +52,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 1,
             question: 'Cuántas patas tiene la araña?',
             answers: [
@@ -78,7 +78,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 1,
             question: '¿Cuál es la capital de Italia?',
             answers: [
@@ -103,8 +103,8 @@ const data = {
                     correct: false
                 }
             ]
-        }, 
-        {   
+        },
+        {
             level: 1,
             question: '¿En que año ocurrió Bogotazo?',
             answers: [
@@ -130,7 +130,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 1,
             question: '¿Cuántos corazones tiene un pulpo?',
             answers: [
@@ -156,7 +156,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 1,
             question: '¿Cuál es la moneda de Colombia?',
             answers: [
@@ -182,7 +182,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 1,
             question: '¿Quién fue cleopatra?',
             answers: [
@@ -208,7 +208,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 1,
             question: '¿Montaña mas alta de la tierra?',
             answers: [
@@ -234,7 +234,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 1,
             question: '¿Quien es tu primo?',
             answers: [
@@ -510,7 +510,6 @@ const data = {
                     correct: false
                 }]
         },
-        
         {
             level: 3,
             question: '¿Qué cantidad de huesos hay en el cuerpo humano?',
@@ -761,7 +760,6 @@ const data = {
                     correct: true
                 }]
         },
-       
         {
             level: 4,
             question: '¿En qué año comenzó la II Guerra Mundial?',
@@ -837,7 +835,7 @@ const data = {
                     correct: false
                 }]
         },
-        {   
+        {
             level: 4,
             question: '¿Cuantas silabas tiene la palabra abecedario?',
             answers: [
@@ -863,7 +861,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 4,
             question: '¿Que tipo de instrumento es el piano?',
             answers: [
@@ -889,7 +887,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 4,
             question: '¿Cuantas letras tiene el abecedario?',
             answers: [
@@ -915,7 +913,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 4,
             question: '¿Cuantos kilos son una tonelada?',
             answers: [
@@ -941,7 +939,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 4,
             question: '¿Quien pinto la mona lisa?',
             answers: [
@@ -967,7 +965,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 4,
             question: '¿Quien ganó el munidial 2022?',
             answers: [
@@ -993,7 +991,7 @@ const data = {
                 }
             ]
         },
-        {   
+        {
             level: 4,
             question: '¿Quien escribio la divina comedia?',
             answers: [
@@ -1269,7 +1267,6 @@ const data = {
                     correct: false
                 }]
         },
-
         {
             level: 6,
             question: ' ¿En que año se invento la Imprenta?',
@@ -1520,7 +1517,6 @@ const data = {
                     correct: false
                 }]
         },
-
         {
             level: 7,
             question: '¿Quién va a la cárcel?',
@@ -1771,7 +1767,6 @@ const data = {
                     correct: false
                 }]
         },
-
         {
             level: 8,
             question: '¿Cuál es el único mamífero capaz de volar?',
@@ -2146,7 +2141,7 @@ const data = {
                     answer: 'Fotosintesís',
                     correct: false
                 }]
-        }, 
+        },
         {
             level: 10,
             question: 'El triángulo que tiene sus tres lados iguales ¿Cómo se llama?',
