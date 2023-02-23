@@ -37,7 +37,7 @@ const data = {
                 },
                 {
                     id: 2,
-                    answer: '1539,
+                    answer: '1539',
                     correct: false
                 },
                 {
@@ -63,7 +63,7 @@ const data = {
                 },
                 {
                     id: 2,
-                    answer: 'diez,
+                    answer: 'diez',
                     correct: false
                 },
                 {
@@ -1983,7 +1983,7 @@ const data = {
                 },
                 {
                     id: 3,
-                    answer: 'Micología,
+                    answer: 'Micología',
                     correct: true
                 },
                 {
@@ -2008,7 +2008,7 @@ const data = {
                 },
                 {
                     id: 3,
-                    answer: 'La bella duermiente,
+                    answer: 'La bella duermiente',
                     correct: false
                 },
                 {
@@ -2093,6 +2093,181 @@ const data = {
                 }]
         },
         {
+            level: 9,
+            question: '¿Quién interpretó a Hitler en “El gran dictador”?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Charlie Chaplin',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Charles Chaplin',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: 'Mario Vargas',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Homero simpson',
+                    correct: false
+                }]
+        },
+        {
+            level: 9,
+            question: '¿Cuál es la flor nacional de Japón?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Camelia Joponesica',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'La Margarita',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'La orquedea',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'El cerezo',
+                    correct: true
+                }]
+        },
+        {
+            level: 9,
+            question: '¿Quién es Jeff Bezos?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Creador de Neflix',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Creador de facebook',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Creador de Amazon',
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: 'Creador de google',
+                    correct: false
+                }]
+        },
+        {
+            level: 9,
+            question: '¿Qué planeta del sistema solar tiene más lunas?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Saturno',
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: 'La tierra',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Jupiter',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Saturno',
+                    correct: false
+                }]
+        },
+        {
+            level: 9,
+            question: '¿Quién fue el auténtico padre de la electricidad?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Benjamin Franklin',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Thomas Edinson',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Nikolas Tesla',
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: 'Albert Einstein',
+                    correct: false
+                }]
+        },
+        {
+            level: 9,
+            question: '¿Cuál es el color de la esperanza?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Verde',
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: 'Blanco',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Amarillo',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Violeta',
+                    correct: false
+                }]
+        },
+        {
+            level: 9,
+            question: '¿Cuál fue el primer metal que usó el hombre?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Oro',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Diamante',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Cobre',
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: 'Plata',
+                    correct: false
+                }]
+        },
+        {
             level: 10,
             question: '¿De qué estado fue emperador Napoleón Bonaparte?',
             answers: [
@@ -2166,7 +2341,758 @@ const data = {
                     answer: 'Rectángulo',
                     correct: false
                 }]
-        }
+        },
+        {
+            level: 10,
+            question: 'Cuál es el metal más caro del mundo?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Circonio',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Titanio',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Estaño',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Rodio',
+                    correct: true
+                }]
+        },
+        {
+            level: 10,
+            question: 'Cuál es el símbolo químico del oro?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'LA',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'AU',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: 'CE',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Y',
+                    correct: false
+                }]
+        },
+        {
+            level: 10,
+            question: 'Qué expresidente sudafricano estuvo encarcelado durante 27 años?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Joko Kodoco',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Jalifa Bi',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Fidel Castro',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Nelson Mandela',
+                    correct: true
+                }]
+        },
+        {
+
+            level: 10,
+            question: 'Cuál es la edad del Universo?',
+            answers: [
+                {
+                    id: 1,
+                    answer: '13.800 millones de años',
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: '10.000 millones de años',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: '14.990 millones de años',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: '36.800 millones de años',
+                    correct: true
+                }]
+        },
+        {
+
+            level: 10,
+            question: 'Cuánto dura un partido de fútbol?',
+            answers: [
+                {
+                    id: 1,
+                    answer: '60 Minutos',
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: '1 Hora',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: '50 Minutos',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: '36 minutos',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 10,
+            question: 'En qué año cayó el muro de Berlín?',
+            answers: [
+                {
+                    id: 1,
+                    answer: '1980',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: '1990',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: '2005',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: '1989',
+                    correct: true
+                }]
+        },
+        {
+
+            level: 10,
+            question: 'Cómo se llama la parte del ojo que es sensible a la luz?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Parpado',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Retina',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: 'Pupila',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Esclerotica',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 11,
+            question: 'Cuál es la segunda estrella más próxima a la Tierra?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Sol',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Sirio',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Centauri',
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: 'Canapus',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 11,
+            question: 'Qué es un gecko?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Objeto',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Moneda',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: 'Reptil',
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: 'Hueso',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 11,
+            question: '¿Qué órgano del cuerpo humano consume más energía?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Cerebro',
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: 'Corazón',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Pulmones',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Higado',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 11,
+            question: '¿Qué país tiene más islas en el mundo?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Japon',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Tailandia',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Filipinas',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Suecia',
+                    correct: true
+                }]
+        },
+        {
+
+            level: 11,
+            question: '¿Qué pasó el 20 de julio de 1969?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Murio el papa',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Apolo 11 aterrizó en la Luna',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: 'Nacio el principe carlos II',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Se creo el primer ordenador',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 11,
+            question: '¿Cuál es la fórmula química del agua?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'H2O',
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: 'O2',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'C2H6O',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Cl2',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 11,
+            question: '¿Quién descubrió la penicilina?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Thales de Mileto',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Thomas Edinson',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Alexander Fleming ',
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: 'Nikola Tesla',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 11,
+            question: '¿En qué año fue sucedió el desastre de Chernobyl?',
+            answers: [
+                {
+                    id: 1,
+                    answer: '1976',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: '1986',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: '1967',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: '1589',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 11,
+            question: '¿En la mitología griega, ¿quién era el mensajero de los dioses?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Cassiel',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Querubin',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Arcangel Gabriel',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Hermes',
+                    correct: true
+                }]
+        },
+        {
+
+            level: 11,
+            question: '¿Qué es el umami?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Un color',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Un sabor',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: 'Un rio',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Un animal',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 12,
+            question: '¿Cuántos dientes tiene un ser humano adulto?',
+            answers: [
+                {
+                    id: 1,
+                    answer: '40',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: '25',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: '30',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: '32',
+                    correct: true
+                }]
+        },
+        {
+
+            level: 12,
+            question: '¿Qué famoso compositor italiano se dice que hizo un pacto con el diablo?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Niccoló Paganini',
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: 'Alessandro murcie',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Alessio Bernadini',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Juan pablo Trisiello',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 12,
+            question: '¿Qué es un narval?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'especie de cocodrilo',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Especie de ballena',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Un cetaceo',
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: 'un Hongo de la piel',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 12,
+            question: '¿Qué es el coltán?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Un mineral',
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: 'un metal',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Un elemento quimico',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'un mosquito',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 12,
+            question: '¿Qué son las mitocondrias?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Una celula',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'orgánulos celulares',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: 'Un sistema metabolico',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'un organo',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 12,
+            question: '¿Quién es el autor de la teoría sobre el origen de las especies?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Luca Pacioli',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Al-Hassan',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Galileo Galilei',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Charles Darwin',
+                    correct: true
+                }]
+        },
+        {
+
+            level: 12,
+            question: '¿A qué neurotransmisor lo conocemos como “la hormona de la felicidad”?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Dopamina',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Serotonina',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: 'Norepinefrina',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Acetilcolina',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 12,
+            question: '¿A qué neurotransmisor lo conocemos como “la hormona de la felicidad”?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Dopamina',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Serotonina',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: 'Norepinefrina',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Acetilcolina',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 12,
+            question: ' ¿Qué artista popularizó la canción Billie Jean?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Elvis Presley',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Elvis Costello',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'Michael Jackson',
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: 'Shakira',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 12,
+            question: ' ¿Cuántas teclas tiene un piano?',
+            answers: [
+                {
+                    id: 1,
+                    answer: '110',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: '89',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: '100',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: '88',
+                    correct: true
+                }]
+        },
+        {
+
+            level: 13,
+            question: ' ¿Qué descubrieron Marie Curie y su esposo Pierre?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'la radioactividad',
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: 'la electricidad',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'la gravedad',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'la luz',
+                    correct: false
+                }]
+        },
+        {
+
+            level: 13,
+            question: ' ¿En qué país se originó el cóctel “mojito”?',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Mexico',
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: 'Cuba',
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: 'Es´paña',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Argentina',
+                    correct: false
+                }]
+        },
     ]
 }
 

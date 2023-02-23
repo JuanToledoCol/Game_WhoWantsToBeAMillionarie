@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import withReactContent from 'sweetalert2-react-content';
 import { useTimer } from "react-timer-hook";
+import SoundLose from "../assets/sounds/lose.mp3";
 
-export default function CountDown({ soundBg, expiryTimestamp, verifyClick }) {
+export default function CountDown({ expiryTimestamp, verifyClick }) {
     
     const namePlayer = localStorage.getItem('namePlayer');
     const navigate = useNavigate();
     const {
         seconds,
-        isRunning,
         restart,
         pause
     } = useTimer({
@@ -25,8 +24,10 @@ export default function CountDown({ soundBg, expiryTimestamp, verifyClick }) {
                 allowEnterKey: false,
                 background: '#6485c3',
                 color: '#fff'
-            }).then(() => {
-                navigate('/');
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    navigate('/');
+                }
             })
 
     });

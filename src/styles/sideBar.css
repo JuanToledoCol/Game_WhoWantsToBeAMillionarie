@@ -15,6 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-right: 2px solid #5187c7;
     border-radius: 30px;
 }

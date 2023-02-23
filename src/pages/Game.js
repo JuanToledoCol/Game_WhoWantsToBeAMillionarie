@@ -28,20 +28,21 @@ import audioSelect2 from '../assets/sounds/question-2.mp3';
 import audioCincuenta from '../assets/sounds/bonus-50-50.mp3';
 import audioFriend from '../assets/sounds/bonus-ask-friend.mp3';
 import audioPublic from '../assets/sounds/bonus-ask-the-audience.mp3';
+import audioWin from '../assets/sounds/last-win.mp3';
 
 export default function Game() {
     //Variables
     const navigate = useNavigate();
     const SwalWin = withReactContent(Swal);
     const SwalLose = withReactContent(Swal);
+    const timer = new Date();
+    const namePlayer = localStorage.getItem('namePlayer');
+    timer.setSeconds(timer.getSeconds() + 30);
 
     const [qAndA, setQAndA] = useState([]);
     const [currentQuestion, setCurrentQuestion] = useState(null);
     const [currentLevel, setCurrentLevel] = useState(1);
-    const namePlayer = localStorage.getItem('namePlayer');
     const [verifyClick, setVerifyClick] = useState('');
-    const timer = new Date();
-    timer.setSeconds(timer.getSeconds() + 30);
 
     const soundBg = new Howl({
         src: [audioSelect1, audioSelect2],
@@ -71,21 +72,29 @@ export default function Game() {
         volume: 0.05
     });
 
+    const soundWin = new Howl({
+        src: [audioWin],
+        autoplay: false,
+        loop: false,
+        volume: 0.05
+    });
+
     //Functions
-    function recibeClick(data){
+    function recibeClick(data) {
         setVerifyClick(data);
+        soundBg.stop();
     }
 
-    function resetClick(data){
+    function resetClick(data) {
         setVerifyClick('');
     }
+
 
     function handleStartGame() {
         setCurrentQuestion(helpers.random(qAndA.filter((question) => question.level === currentLevel)));
     }
 
     function handleLevelUp() {
-        secure();
         setCurrentLevel(currentLevel + 1);
         setCurrentQuestion(helpers.random(qAndA.filter((question) => question.level === currentLevel)));
     }
@@ -95,74 +104,6 @@ export default function Game() {
         document.getElementById('p2').style.display = ``;
         document.getElementById('p3').style.display = ``;
         document.getElementById('p4').style.display = ``;
-    }
-
-    function secure() {
-        switch (currentLevel) {
-            case 5:
-                Swal.fire({
-                    title: '¡Felicidades' + namePlayer +'! Llegaste a un seguro',
-                    text: "Puedes retirarte o continuar jugando.",
-                    icon: 'success',
-                    confirmButtonColor: '#231f20',
-                    confirmButtonText: 'Continuar',
-                    showCancelButton: true,
-                    cancelButtonColor: '#d33',
-                    cancelButtonText: 'Salir',
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                    allowEnterKey: false,
-                    background: '#6485c3',
-                    color: '#fff'
-                }).then((result) => {
-                    if (result.isCancelled) {
-                        navigate('/');
-                    }
-                });
-                break;
-            case 10:
-                Swal.fire({
-                    title: '¡Felicidades' + namePlayer +'! Llegaste a un seguro',
-                    text: "Puedes retirarte o continuar jugando.",
-                    icon: 'success',
-                    confirmButtonColor: '#231f20',
-                    confirmButtonText: 'Continuar',
-                    showCancelButton: true,
-                    cancelButtonColor: '#d33',
-                    cancelButtonText: 'Salir',
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                    allowEnterKey: false,
-                    background: '#6485c3',
-                    color: '#fff'
-                }).then((result) => {
-                    if (result.isCancelled) {
-                        navigate('/');
-                    }
-                });
-                break;
-            case 15:
-                Swal.fire({
-                    title: '¡Felicidades' + namePlayer + '.',
-                    text: "Has ganado el juego.",
-                    icon: 'success',
-                    confirmButtonColor: '#231f20',
-                    confirmButtonText: 'Continuar',
-                    cancelButtonColor: '#d33',
-                    cancelButtonText: 'Salir',
-                    showCancelButton: true,
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                    allowEnterKey: false,
-                    background: '#6485c3',
-                    color: '#fff'
-                }).then((result) => {
-                    if (result.isCancelled) {
-                        navigate('/');
-                    }
-                });
-                break;
-        }
     }
 
     function handleAcum(verify) {
@@ -175,23 +116,125 @@ export default function Game() {
     function handleNextQuestion(verify) {
         if (verify) {
             setTimeout(() => {
-                soundBg.stop();
-                SwalWin.fire({
-                    icon: 'success',
-                    title: '¡Exelente ' + namePlayer + '!, Sigue así.',
-                    confirmButtonText: 'Siguiente pregunta',
-                    confirmButtonColor: '#231f20',
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                    allowEnterKey: false,
-                    background: '#6485c3',
-                    color: '#fff'
-                }).then((result) => {
-                    handleLevelUp();
-                    handleAcum(verify);
-                    resetValues();
-                    resetClick();
-                });
+                switch (currentLevel) {
+                    case 5:
+                        Swal.fire({
+                            title: '¡Felicidades ' + namePlayer + '! Llegaste a un seguro',
+                            text: "Puedes retirarte o continuar jugando.",
+                            icon: 'success',
+                            confirmButtonColor: '#231f20',
+                            confirmButtonText: 'Continuar',
+                            showCancelButton: true,
+                            cancelButtonColor: '#d33',
+                            cancelButtonText: 'Salir',
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            allowEnterKey: false,
+                            background: '#6485c3',
+                            color: '#fff'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                handleLevelUp();
+                                handleAcum(verify);
+                                resetValues();
+                                resetClick();
+                            } else if (result.isDismissed) {
+                                Swal.fire({
+                                    title: '¡Adios ' + namePlayer + '!',
+                                    text: "Gracias por jugar.",
+                                    icon: 'success',
+                                    confirmButtonColor: '#231f20',
+                                    confirmButtonText: 'Salir al menú',
+                                    allowOutsideClick: false,
+                                    allowEscapeKey: false,
+                                    allowEnterKey: false,
+                                    background: '#6485c3',
+                                    color: '#fff'
+                                }).then((result) => {
+                                    if (result.isConfirmed) {
+                                        navigate('/');
+                                    }
+                                });
+                            }
+                        });
+                        break;
+                    case 10:
+                        Swal.fire({
+                            title: 'Ya casí ' + namePlayer + '! Tú puedes.',
+                            text: "¿O quizas vas a retirarte? ¡Decidete!",
+                            icon: 'success',
+                            confirmButtonColor: '#231f20',
+                            confirmButtonText: 'Continuar',
+                            showCancelButton: true,
+                            cancelButtonColor: '#d33',
+                            cancelButtonText: 'Salir',
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            allowEnterKey: false,
+                            background: '#6485c3',
+                            color: '#fff'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                handleLevelUp();
+                                handleAcum(verify);
+                                resetValues();
+                                resetClick();
+                            } else if (result.isDismissed) {
+                                Swal.fire({
+                                    title: '!Una lastima ' + namePlayer + '!',
+                                    text: "Gracias por jugar.",
+                                    icon: 'success',
+                                    confirmButtonColor: '#231f20',
+                                    confirmButtonText: 'Salir al menú',
+                                    allowOutsideClick: false,
+                                    allowEscapeKey: false,
+                                    allowEnterKey: false,
+                                    background: '#6485c3',
+                                    color: '#fff'
+                                }).then((result) => {
+                                    if (result.isConfirmed) {
+                                        navigate('/');
+                                    }
+                                });
+                            }
+                        });
+                        break;
+                    case 15:
+                        soundWin.play();
+                        Swal.fire({
+                            title: 'Lo lograste ' + namePlayer + '!!!',
+                            text: "Ganaste el premio máximo.",
+                            icon: 'success',
+                            confirmButtonColor: '#231f20',
+                            confirmButtonText: 'Volver al menú',
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            allowEnterKey: false,
+                            background: '#6485c3',
+                            color: '#fff'
+                        }).then((result) => {
+                            navigate('/');
+                        });
+                        break;
+                    default:
+                        SwalWin.fire({
+                            icon: 'success',
+                            title: '¡Exelente ' + namePlayer + '!, Sigue así.',
+                            confirmButtonText: 'Siguiente pregunta',
+                            confirmButtonColor: '#231f20',
+                            allowOutsideClick: false,
+                            allowEscapeKey: false,
+                            allowEnterKey: false,
+                            background: '#6485c3',
+                            color: '#fff'
+                        }).then((result) => {
+                            handleLevelUp();
+                            handleAcum(verify);
+                            resetValues();
+                            resetClick();
+                        });
+                        break;
+                }
             }, 11000);
         } else {
             setTimeout(() => {
@@ -206,7 +249,10 @@ export default function Game() {
                     background: '#6485c3',
                     color: '#fff'
                 }).then((result) => {
-                    navigate('/');
+                    if (result.isConfirmed) {
+                        soundBg.stop();
+                        navigate('/');
+                    }
                 });
             }, 8000);
         }
@@ -228,10 +274,9 @@ export default function Game() {
             allowEscapeKey: false,
             background: '#6485c3',
             color: '#fff'
-
         }).then((result) => {
             if (result.isConfirmed) {
-                soundBg.stop();
+                soundBg.unload();
                 navigate('/');
             }
         })
@@ -376,8 +421,6 @@ export default function Game() {
         })
     }
 
-
-
     //Effects
     useEffect(() => {
         setQAndA(data.questions);
@@ -389,7 +432,7 @@ export default function Game() {
             <div className='container_game grid2' onLoad={handleStartGame}>
                 <div className='container_logo_game'>
                     <img className='logo_game' src={Logo} alt='Quien_quiere_ser_millonario' />
-                    <CountDown soundBg={soundBg} expiryTimestamp ={timer} verifyClick={verifyClick}/>
+                    <CountDown expiryTimestamp={timer} verifyClick={verifyClick} />
                 </div>
                 <div className='container_comodin'>
                     <IconPhone className='comodin_phone bg_icon' onClick={llamada} id='com_telefono' />
@@ -403,8 +446,8 @@ export default function Game() {
                     <Question
                         quest={currentQuestion}
                         handleNextQuestion={handleNextQuestion}
-                        soundBg={soundBg}
                         recibeClick={recibeClick}
+                        soundBg={soundBg}
                     />
                 )}
             </div>

@@ -13,7 +13,7 @@ import audioWin from '../assets/sounds/win.mp3';
 import audioLose from '../assets/sounds/lose.mp3';
 import audioWho from '../assets/sounds/who-was-correct.mp3';
 
-export default function Question({ quest, handleNextQuestion, soundBg, recibeClick }) {
+export default function Question({ quest, handleNextQuestion, recibeClick, soundBg }) {
 
     //Variables
     const { question, answers } = quest;
@@ -39,14 +39,10 @@ export default function Question({ quest, handleNextQuestion, soundBg, recibeCli
         loop: false,
     })
 
-    useEffect(() => {
+    soundBg.once('load', () => {
         soundBg.play();
-        if(soundBg.playing() === true){
-            soundBg.stop();
-        }else{
-            soundBg.play();
-        }
-    }, [soundBg]);
+    }
+    );
 
     //Functions
     function handleSelectAnswer(e) {
@@ -183,7 +179,6 @@ export default function Question({ quest, handleNextQuestion, soundBg, recibeCli
     }
 
     function handleAudio(result) {
-        soundBg.stop();
         if (result) {
             setTimeout(() => {
                 soundWin.play();
@@ -214,7 +209,7 @@ export default function Question({ quest, handleNextQuestion, soundBg, recibeCli
                     <h2>{question}</h2>
                 </div>
             </div>
-            <div className='container_answers' onClick={(e) => {handleSelectAnswer(e); recibeClick(verifyClick);}} id='container_answers'>
+            <div className='container_answers' onClick={(e) => { handleSelectAnswer(e); recibeClick(verifyClick); }} id='container_answers'>
                 {
                     answers.map(({ id, answer, correct }) => {
                         switch (id) {
