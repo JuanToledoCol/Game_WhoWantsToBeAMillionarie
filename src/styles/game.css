@@ -63,6 +63,7 @@
   align-items: center;
   color: #fff;
   margin-left: 30px;
+  margin: auto;
 }
 
 /*Container Comodines*/
@@ -128,3 +129,24 @@
 }
 
 
+.btn_next{
+  width: auto;
+  height: 60px;
+  background-color: #1f191a;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  fill: #fff;
+  padding: 10px;
+  margin: -25px 0 0 0;
+}
+
+.btn_next:hover{
+  background-color: #010523;
+}
+
+.swal2-popup{
+  margin-left: 270px;
+  border: 3px solid #5187c7;
+}

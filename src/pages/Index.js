@@ -5,6 +5,7 @@ import ReactHowler from "react-howler";
 import "../styles/index.css"
 //Images Imports
 import Logo from "../assets/images/logo.jpg"
+import Marca from "../assets/images/marca.jpg"
 import IconPlay from "../assets/icons/play-solid.svg"
 //Audio Imports
 import audioMainTheme from "../assets/sounds/main-theme.mp3"
@@ -35,6 +36,7 @@ export default function Index() {
             <div className="container_bg">
                 <div className="container_logo">
                     <img className="logo" src={Logo} alt="Quien_quiere_ser_millonario" />
+                    <img className="marca" src={Marca ? Marca : ''} alt="Quien_quiere_ser_millonario" />
                 </div>
                 <form onSubmit={saveNamePlayer} data-parsley-validate="true">
                     <div className="container_name">

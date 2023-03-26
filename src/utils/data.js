@@ -28,7 +28,7 @@ const data = {
         },
         {
             level: 1,
-            question: '¿En que año se fúndo bogotá?',
+            question: '¿En que año se fundó bogotá?',
             answers: [
                 {
                     id: 1,
@@ -54,26 +54,26 @@ const data = {
         },
         {
             level: 1,
-            question: 'Cuántas patas tiene la araña?',
+            question: '¿Cuántas patas tiene la araña?',
             answers: [
                 {
                     id: 1,
-                    answer: 'cuatro',
+                    answer: 'Cuatro',
                     correct: false
                 },
                 {
                     id: 2,
-                    answer: 'diez',
+                    answer: 'Diez',
                     correct: false
                 },
                 {
                     id: 3,
-                    answer: 'ocho',
+                    answer: 'Ocho',
                     correct: true
                 },
                 {
                     id: 4,
-                    answer: 'cinco',
+                    answer: 'Cinco',
                     correct: false
                 }
             ]
@@ -106,7 +106,7 @@ const data = {
         },
         {
             level: 1,
-            question: '¿En que año ocurrió Bogotazo?',
+            question: '¿En que año ocurrió el "Bogotazo"?',
             answers: [
                 {
                     id: 1,
@@ -184,33 +184,33 @@ const data = {
         },
         {
             level: 1,
-            question: '¿Quién fue cleopatra?',
+            question: '¿Quién fue Cleopatra?',
             answers: [
                 {
                     id: 1,
-                    answer: 'Influencer egipta',
+                    answer: 'Influencer de Egipto',
                     correct: false
                 },
                 {
                     id: 2,
-                    answer: 'Faraona de egipto',
+                    answer: 'Faraona de Egipto',
                     correct: true
                 },
                 {
                     id: 3,
-                    answer: 'ex esposa del presidente',
+                    answer: 'Ex esposa del presidente',
                     correct: false
                 },
                 {
                     id: 4,
-                    answer: 'Faraona de china',
+                    answer: 'Faraona de China',
                     correct: false
                 }
             ]
         },
         {
             level: 1,
-            question: '¿Montaña mas alta de la tierra?',
+            question: '¿Cuál es la montaña más alta de la tierra?',
             answers: [
                 {
                     id: 1,
@@ -236,7 +236,7 @@ const data = {
         },
         {
             level: 1,
-            question: '¿Quien es tu primo?',
+            question: '¿Quién es tu primo?',
             answers: [
                 {
                     id: 1,
@@ -312,7 +312,7 @@ const data = {
         },
         {
             level: 2,
-            question: '¿En que pais se encuentra la torre de pisa?',
+            question: '¿En que país se encuentra la torre de pisa?',
             answers: [
                 {
                     id: 1,
@@ -337,7 +337,7 @@ const data = {
         },
         {
             level: 2,
-            question: '¿Como se escirbe el numero 19 en romano?',
+            question: '¿Cómo se escribe el numero 19 en romano?',
             answers: [
                 {
                     id: 1,
@@ -362,7 +362,7 @@ const data = {
         },
         {
             level: 2,
-            question: '¿Quien es el protagonista de la Odisea?',
+            question: '¿Quién es el protagonista en la epopeya poética "La Odisea"?',
             answers: [
                 {
                     id: 1,
@@ -377,17 +377,17 @@ const data = {
                 {
                     id: 3,
                     answer: 'Romeo',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 4,
-                    answer: 'ULises',
+                    answer: 'Ulises',
                     correct: true
                 }]
         },
         {
             level: 2,
-            question: '¿Quien escribio el Quijote?',
+            question: '¿Quién escribió "El Quijote"?',
             answers: [
                 {
                     id: 1,
@@ -416,7 +416,7 @@ const data = {
             answers: [
                 {
                     id: 1,
-                    answer: 'la ballena azul antártica',
+                    answer: 'La ballena azul antártica',
                     correct: true
                 },
                 {
@@ -462,7 +462,7 @@ const data = {
         },
         {
             level: 2,
-            question: '¿Primer presidente de Colombia?',
+            question: 'El primer presidente de Colombia fue:',
             answers: [
                 {
                     id: 1,
@@ -487,7 +487,7 @@ const data = {
         },
         {
             level: 2,
-            question: '¿En que año comenzo a funcionar el trasmilenio?',
+            question: '¿En que año comenzó a funcionar el trasmilenio?',
             answers: [
                 {
                     id: 1,
@@ -587,7 +587,7 @@ const data = {
         },
         {
             level: 3,
-            question: '¿Quien invento la Bombilla',
+            question: '¿Quién inventó la bombilla?',
             answers: [
                 {
                     id: 1,
@@ -612,7 +612,7 @@ const data = {
         },
         {
             level: 3,
-            question: '¿En que Pais se uso la primera bomba Atomica',
+            question: '¿En que país se uso la primer bomba atómica?',
             answers: [
                 {
                     id: 1,
@@ -637,7 +637,7 @@ const data = {
         },
         {
             level: 3,
-            question: '¿Cuantas veces a estado el hombre en la luna',
+            question: '¿Cuantas veces a estado el hombre en la luna?',
             answers: [
                 {
                     id: 1,
@@ -657,12 +657,12 @@ const data = {
                 {
                     id: 4,
                     answer: 'Dos',
-                    correct: true
+                    correct: false
                 }]
         },
         {
             level: 3,
-            question: '¿En que pais nacio Adolf Hitler',
+            question: '¿En que país nació Adolf Hitler?',
             answers: [
                 {
                     id: 1,
@@ -687,7 +687,7 @@ const data = {
         },
         {
             level: 3,
-            question: '¿Cual es el pais mas grande del mundo',
+            question: '¿Cuál es el país mas grande del mundo?',
             answers: [
                 {
                     id: 1,
@@ -702,17 +702,17 @@ const data = {
                 {
                     id: 3,
                     answer: 'New York',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 4,
                     answer: 'Rusia',
-                    correct: false
+                    correct: true
                 }]
         },
         {
             level: 3,
-            question: '¿Donde se invento la pizza',
+            question: '¿Dónde se inventó la pizza?',
             answers: [
                 {
                     id: 1,
@@ -727,7 +727,7 @@ const data = {
                 {
                     id: 3,
                     answer: 'Francia',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 4,
@@ -737,7 +737,7 @@ const data = {
         },
         {
             level: 3,
-            question: '¿Cual es el rio mas grande del planeta',
+            question: '¿Cuál es el rio más grande del planeta?',
             answers: [
                 {
                     id: 1,
@@ -762,7 +762,7 @@ const data = {
         },
         {
             level: 4,
-            question: '¿En qué año comenzó la II Guerra Mundial?',
+            question: '¿En qué año comenzó la "II Guerra Mundial"?',
             answers: [
                 {
                     id: 1,
@@ -821,7 +821,7 @@ const data = {
                 },
                 {
                     id: 2,
-                    answer: 'Vaticano',
+                    answer: 'El Vaticano',
                     correct: true
                 },
                 {
@@ -837,16 +837,16 @@ const data = {
         },
         {
             level: 4,
-            question: '¿Cuantas silabas tiene la palabra abecedario?',
+            question: '¿Cuantas sílabas tiene la palabra abecedario?',
             answers: [
                 {
                     id: 1,
-                    answer: 'tres',
+                    answer: 'Tres',
                     correct: false
                 },
                 {
                     id: 2,
-                    answer: 'cuatro',
+                    answer: 'Cuatro',
                     correct: false
                 },
                 {
@@ -856,7 +856,7 @@ const data = {
                 },
                 {
                     id: 4,
-                    answer: 'dos',
+                    answer: 'Seis',
                     correct: false
                 }
             ]
@@ -877,19 +877,19 @@ const data = {
                 },
                 {
                     id: 3,
-                    answer: 'electrico',
+                    answer: 'Eléctrico',
                     correct: false
                 },
                 {
                     id: 4,
-                    answer: 'aerofono',
+                    answer: 'Viento',
                     correct: false
                 }
             ]
         },
         {
             level: 4,
-            question: '¿Cuantas letras tiene el abecedario?',
+            question: '¿Cuántas letras tiene el abecedario?',
             answers: [
                 {
                     id: 1,
@@ -915,17 +915,17 @@ const data = {
         },
         {
             level: 4,
-            question: '¿Cuantos kilos son una tonelada?',
+            question: '¿Cuántos kilos son una tonelada?',
             answers: [
                 {
                     id: 1,
-                    answer: '5',
+                    answer: '5000',
                     correct: false
                 },
                 {
                     id: 2,
-                    answer: '999',
-                    correct: true
+                    answer: '10000',
+                    correct: false
                 },
                 {
                     id: 3,
@@ -934,14 +934,14 @@ const data = {
                 },
                 {
                     id: 4,
-                    answer: '30',
+                    answer: '30000',
                     correct: false
                 }
             ]
         },
         {
             level: 4,
-            question: '¿Quien pinto la mona lisa?',
+            question: '¿Quién pintó el famoso cuandro "La mona lisa"?',
             answers: [
                 {
                     id: 1,
@@ -967,7 +967,7 @@ const data = {
         },
         {
             level: 4,
-            question: '¿Quien ganó el munidial 2022?',
+            question: '¿Quién ganó el munidial 2022?',
             answers: [
                 {
                     id: 1,
@@ -977,12 +977,12 @@ const data = {
                 {
                     id: 2,
                     answer: 'Argentina',
-                    correct: false
+                    correct: true
                 },
                 {
                     id: 3,
                     answer: 'Brasil',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 4,
@@ -993,7 +993,7 @@ const data = {
         },
         {
             level: 4,
-            question: '¿Quien escribio la divina comedia?',
+            question: '¿Quién escribió "La divina comedia"?',
             answers: [
                 {
                     id: 1,
@@ -1019,28 +1019,29 @@ const data = {
         },
         {
             level: 5,
-            question: '¿Cuál es el río más largo del mundo?',
+            question: '¿Cuál es el elemento químico más abundante en el universo?',
             answers: [
                 {
                     id: 1,
-                    answer: 'Río Amazonas',
+                    answer: 'Hidrógeno',
                     correct: true
                 },
                 {
                     id: 2,
-                    answer: 'Río Nilo',
+                    answer: 'Oxígeno',
                     correct: false
                 },
                 {
                     id: 3,
-                    answer: 'Río Yangtze',
+                    answer: 'Helio',
                     correct: false
                 },
                 {
                     id: 4,
-                    answer: 'Río Mississippi',
+                    answer: 'Carbono',
                     correct: false
-                }]
+                }
+            ]
         },
         {
             level: 5,
@@ -1094,7 +1095,7 @@ const data = {
         },
         {
             level: 5,
-            question: '¿Quien fundo Santa Marta?',
+            question: '¿Quién fundo Santa Marta?',
             answers: [
                 {
                     id: 1,
@@ -1119,7 +1120,7 @@ const data = {
         },
         {
             level: 5,
-            question: '¿Departamento mas poblado de colombia?',
+            question: '¿Departamento más poblado de colombia?',
             answers: [
                 {
                     id: 1,
@@ -1169,26 +1170,26 @@ const data = {
         },
         {
             level: 5,
-            question: '¿Cual es la Flor nacional de Colombia?',
+            question: '¿Cuál es la flor nacional de Colombia?',
             answers: [
                 {
                     id: 1,
-                    answer: 'La rosa',
+                    answer: 'Rosa',
                     correct: false
                 },
                 {
                     id: 2,
-                    answer: 'La orquedea',
+                    answer: 'Orquídea',
                     correct: true
                 },
                 {
                     id: 3,
-                    answer: 'La margarita',
+                    answer: 'Margarita',
                     correct: false
                 },
                 {
                     id: 4,
-                    answer: 'La azucena',
+                    answer: 'Azucena',
                     correct: false
                 }]
         },
@@ -1244,7 +1245,7 @@ const data = {
         },
         {
             level: 5,
-            question: '¿Cuantos anillos hay en una bandera Olimpica',
+            question: '¿Cuántos anillos hay en la bandera Olímpica',
             answers: [
                 {
                     id: 1,
@@ -1269,7 +1270,7 @@ const data = {
         },
         {
             level: 6,
-            question: ' ¿En que año se invento la Imprenta?',
+            question: 'El año en que surgio la imprenta fue:',
             answers: [
                 {
                     id: 1,
@@ -1294,7 +1295,7 @@ const data = {
         },
         {
             level: 6,
-            question: '¿Cuanto duro la guerra de los 100 años?',
+            question: '¿Cuanto duró la guerra de los 100 años?',
             answers: [
                 {
                     id: 1,
@@ -1309,7 +1310,7 @@ const data = {
                 {
                     id: 3,
                     answer: '99',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 4,
@@ -1319,7 +1320,7 @@ const data = {
         },
         {
             level: 6,
-            question: ' ¿En qué país se encuentra el famoso monumento Taj Mahal?',
+            question: ' ¿En qué país se encuentra el famoso monumento del "Taj Mahal"?',
             answers: [
                 {
                     id: 1,
@@ -1344,7 +1345,7 @@ const data = {
         },
         {
             level: 6,
-            question: '¿Cuál es el color de la piel del oso polar',
+            question: '¿Qué color de piel tiene el oso polar?',
             answers: [
                 {
                     id: 1,
@@ -1369,7 +1370,7 @@ const data = {
         },
         {
             level: 6,
-            question: '¿Como se llaman las crias de los conejos',
+            question: '¿Cómo se llaman las crías de los conejos?',
             answers: [
                 {
                     id: 1,
@@ -1394,7 +1395,7 @@ const data = {
         },
         {
             level: 6,
-            question: '¿Cuántas válvulas tiene el corazon humano',
+            question: '¿Cuántas válvulas tiene el corazón de un humano?',
             answers: [
                 {
                     id: 1,
@@ -1419,7 +1420,7 @@ const data = {
         },
         {
             level: 6,
-            question: '¿Cuantos elementos hay en la tabla periodica',
+            question: '¿Cuántos elementos químicos hay en la tabla periódica?',
             answers: [
                 {
                     id: 1,
@@ -1444,7 +1445,7 @@ const data = {
         },
         {
             level: 6,
-            question: '¿Cuál fue la primera película de terror en color',
+            question: 'La primer película de terror estrenada a color fue:',
             answers: [
                 {
                     id: 1,
@@ -1469,7 +1470,7 @@ const data = {
         },
         {
             level: 6,
-            question: '¿Cuánto dura una matarón',
+            question: '¿Cuál es la distancia que se debe recorrer en una maratón?',
             answers: [
                 {
                     id: 1,
@@ -1489,31 +1490,31 @@ const data = {
                 {
                     id: 4,
                     answer: '50km',
-                    correct: true
+                    correct: false
                 }]
         },
         {
             level: 6,
-            question: '¿Aproximadamente cuantas personas hay en el mundo',
+            question: 'La tierra tiene aproximadamente:',
             answers: [
                 {
                     id: 1,
-                    answer: '7.888 miles de millones',
+                    answer: '7.8 mil millones, habitantes',
                     correct: false
                 },
                 {
                     id: 2,
-                    answer: '8.000 millones ',
+                    answer: '8 millones, habitantes',
                     correct: false
                 },
                 {
                     id: 3,
-                    answer: '7.9 billones',
+                    answer: '7.9 mil millones, habitantes',
                     correct: true
                 },
                 {
                     id: 4,
-                    answer: '1.23 billones',
+                    answer: '8.2 mil millones, habitantes',
                     correct: false
                 }]
         },
@@ -1569,7 +1570,7 @@ const data = {
         },
         {
             level: 7,
-            question: '¿Cuál es el primero de la lista de los números primos?',
+            question: '¿Cuál es el primero en la lista de los números primos?',
             answers: [
                 {
                     id: 1,
@@ -1594,7 +1595,7 @@ const data = {
         },
         {
             level: 7,
-            question: '¿En que año murio Freddie Mercury?',
+            question: '¿En que año murió el cantante "Freddie Mercury"?',
             answers: [
                 {
                     id: 1,
@@ -1619,7 +1620,7 @@ const data = {
         },
         {
             level: 7,
-            question: '¿Cual fue el Genocidio mas grande de la Historia?',
+            question: '¿Cuál fue el genocidio mas grande de la Historia?',
             answers: [
                 {
                     id: 1,
@@ -1638,17 +1639,17 @@ const data = {
                 },
                 {
                     id: 4,
-                    answer: 'El Holocausto',
+                    answer: 'El Holocausto Nazi',
                     correct: true
                 }]
         },
         {
             level: 7,
-            question: '¿Cual es la ciudad de los rascacielos?',
+            question: '¿Cuál es la ciudad de los rascacielos?',
             answers: [
                 {
                     id: 1,
-                    answer: 'Medellin',
+                    answer: 'Medellín',
                     correct: false
                 },
                 {
@@ -1669,7 +1670,7 @@ const data = {
         },
         {
             level: 7,
-            question: '¿Donde originaron los juegos olimpicos?',
+            question: '¿Dónde se originaron los juegos olímpicos?',
             answers: [
                 {
                     id: 1,
@@ -1679,7 +1680,7 @@ const data = {
                 {
                     id: 2,
                     answer: 'Nueva York',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 3,
@@ -1689,12 +1690,12 @@ const data = {
                 {
                     id: 4,
                     answer: 'Grecia',
-                    correct: false
+                    correct: true
                 }]
         },
         {
             level: 7,
-            question: '¿Quién es el padre de la psicoanálisis?',
+            question: '¿Quién es el padre del psicoanálisis?',
             answers: [
                 {
                     id: 1,
@@ -1744,7 +1745,7 @@ const data = {
         },
         {
             level: 7,
-            question: '¿En qué se Especializa la Cartografía?',
+            question: '¿En qué se especializa la "Cartografía"?',
             answers: [
                 {
                     id: 1,
@@ -1778,7 +1779,7 @@ const data = {
                 },
                 {
                     id: 2,
-                    answer: 'El murciélago',
+                    answer: 'El Murciélago',
                     correct: true
                 },
                 {
@@ -1844,7 +1845,7 @@ const data = {
         },
         {
             level: 8,
-            question: '¿Cual es el tercer planeta en el sistema solar?',
+            question: '¿Cuál es el tercer planeta en el sistema solar?',
             answers: [
                 {
                     id: 1,
@@ -1863,13 +1864,13 @@ const data = {
                 },
                 {
                     id: 4,
-                    answer: 'La luna',
+                    answer: 'Marte',
                     correct: false
                 }]
         },
         {
             level: 8,
-            question: '¿Que pais tiene forma de bota?',
+            question: '¿Que país tiene forma de bota?',
             answers: [
                 {
                     id: 1,
@@ -1894,7 +1895,7 @@ const data = {
         },
         {
             level: 8,
-            question: '¿Cual es el musculo mas fuerte del cuerpo humano?',
+            question: '¿Cuál es el músculo mas fuerte del cuerpo humano?',
             answers: [
                 {
                     id: 1,
@@ -1923,12 +1924,12 @@ const data = {
             answers: [
                 {
                     id: 1,
-                    answer: '2.899',
+                    answer: '3,1417',
                     correct: false
                 },
                 {
                     id: 2,
-                    answer: '3.256',
+                    answer: '3,1413',
                     correct: false
                 },
                 {
@@ -1938,13 +1939,13 @@ const data = {
                 },
                 {
                     id: 4,
-                    answer: '1.1324',
+                    answer: '3,1416',
                     correct: false
                 }]
         },
         {
             level: 8,
-            question: '¿cual es el material natural mas duro del planeta?',
+            question: '¿Cuál es el material natural mas duro del planeta?',
             answers: [
                 {
                     id: 1,
@@ -1969,7 +1970,7 @@ const data = {
         },
         {
             level: 8,
-            question: '¿Como se llama el estudio de los hongos?',
+            question: '¿Cómo se llama el estudio de los hongos?',
             answers: [
                 {
                     id: 1,
@@ -1994,7 +1995,7 @@ const data = {
         },
         {
             level: 8,
-            question: '¿Cual fue la primera pelicula de Disney?',
+            question: '¿Cuál fue la primera pelicula de Disney?',
             answers: [
                 {
                     id: 1,
@@ -2013,7 +2014,7 @@ const data = {
                 },
                 {
                     id: 4,
-                    answer: 'Cuento de los hermanos grimm',
+                    answer: 'Cuentos de los hermanos grimm',
                     correct: false
                 }]
         },
@@ -2024,7 +2025,7 @@ const data = {
                 {
                     id: 1,
                     answer: 'Alemania',
-                    correct: false
+                    correct: true
                 },
                 {
                     id: 2,
@@ -2034,7 +2035,7 @@ const data = {
                 {
                     id: 3,
                     answer: 'Brasil',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 4,
@@ -2044,7 +2045,7 @@ const data = {
         },
         {
             level: 9,
-            question: '¿Quién escribió “Hamlet”?',
+            question: '¿Quién escribió "Hamlet"?',
             answers: [
                 {
                     id: 1,
@@ -2074,12 +2075,12 @@ const data = {
                 {
                     id: 1,
                     answer: 'Polonia',
-                    correct: false
+                    correct: true
                 },
                 {
                     id: 2,
                     answer: 'Rusia',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 3,
@@ -2094,17 +2095,17 @@ const data = {
         },
         {
             level: 9,
-            question: '¿Quién interpretó a Hitler en “El gran dictador”?',
+            question: '¿Quién interpretó a Hitler en la pelicula “El gran dictador”?',
             answers: [
                 {
                     id: 1,
                     answer: 'Charlie Chaplin',
-                    correct: false
+                    correct: true
                 },
                 {
                     id: 2,
                     answer: 'Charles Chaplin',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 3,
@@ -2119,7 +2120,7 @@ const data = {
         },
         {
             level: 9,
-            question: '¿Cuál es la flor nacional de Japón?',
+            question: '¿Cuál es la flor naciónal de Japón?',
             answers: [
                 {
                     id: 1,
@@ -2136,6 +2137,7 @@ const data = {
                     answer: 'La orquedea',
                     correct: false
                 },
+
                 {
                     id: 4,
                     answer: 'El cerezo',
@@ -2174,7 +2176,7 @@ const data = {
                 {
                     id: 1,
                     answer: 'Saturno',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 2,
@@ -2184,22 +2186,22 @@ const data = {
                 {
                     id: 3,
                     answer: 'Jupiter',
-                    correct: false
+                    correct: true
                 },
                 {
                     id: 4,
-                    answer: 'Saturno',
+                    answer: 'Marte',
                     correct: false
                 }]
         },
         {
             level: 9,
-            question: '¿Quién fue el auténtico padre de la electricidad?',
+            question: '¿Quién es considerado el auténtico padre de la electricidad?',
             answers: [
                 {
                     id: 1,
                     answer: 'Benjamin Franklin',
-                    correct: false
+                    correct: true
                 },
                 {
                     id: 2,
@@ -2209,7 +2211,7 @@ const data = {
                 {
                     id: 3,
                     answer: 'Nikolas Tesla',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 4,
@@ -2244,57 +2246,58 @@ const data = {
         },
         {
             level: 9,
-            question: '¿Cuál fue el primer metal que usó el hombre?',
+            question: '¿Qué animal es conocido por su capacidad para cambiar de color?',
             answers: [
                 {
                     id: 1,
-                    answer: 'Oro',
-                    correct: false
+                    answer: 'Camaleón',
+                    correct: true
                 },
                 {
                     id: 2,
-                    answer: 'Diamante',
+                    answer: 'Iguana',
                     correct: false
                 },
                 {
                     id: 3,
-                    answer: 'Cobre',
-                    correct: true
+                    answer: 'Dragón de Komodo',
+                    correct: false
                 },
                 {
                     id: 4,
-                    answer: 'Plata',
+                    answer: 'Basiliscus',
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 10,
+            question: 'Napoleón Bonaparte emperador de:',
+            answers: [
+                {
+                    id: 1,
+                    answer: 'Francia',
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: 'Italia',
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: 'España',
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: 'Alemania',
                     correct: false
                 }]
         },
         {
             level: 10,
-            question: '¿De qué estado fue emperador Napoleón Bonaparte?',
-            answers: [
-                {
-                    id: 1,
-                    answer: 'De Francia',
-                    correct: true
-                },
-                {
-                    id: 2,
-                    answer: 'De Italia',
-                    correct: false
-                },
-                {
-                    id: 3,
-                    answer: 'De España',
-                    correct: false
-                },
-                {
-                    id: 4,
-                    answer: 'De Alemania',
-                    correct: false
-                }]
-        },
-        {
-            level: 10,
-            question: '¿Cómo se llama el proceso por el cual las plantas obtienen alimento?',
+            question: '¿Cómo se llama el proceso por el Cuál las plantas obtienen alimento?',
             answers: [
                 {
                     id: 1,
@@ -2319,7 +2322,7 @@ const data = {
         },
         {
             level: 10,
-            question: 'El triángulo que tiene sus tres lados iguales ¿Cómo se llama?',
+            question: 'El triángulo que tiene sus tres lados iguales se llama...',
             answers: [
                 {
                     id: 1,
@@ -2344,7 +2347,7 @@ const data = {
         },
         {
             level: 10,
-            question: 'Cuál es el metal más caro del mundo?',
+            question: '¿Cuál es el metal más caro del mundo?',
             answers: [
                 {
                     id: 1,
@@ -2420,7 +2423,7 @@ const data = {
         {
 
             level: 10,
-            question: 'Cuál es la edad del Universo?',
+            question: '¿Cuál es la edad del universo?',
             answers: [
                 {
                     id: 1,
@@ -2440,39 +2443,39 @@ const data = {
                 {
                     id: 4,
                     answer: '36.800 millones de años',
-                    correct: true
+                    correct: false
                 }]
         },
         {
 
             level: 10,
-            question: 'Cuánto dura un partido de fútbol?',
+            question: '¿Cuánto es el tiempo reglamentario de un partido de fútbol?',
             answers: [
                 {
                     id: 1,
-                    answer: '60 Minutos',
+                    answer: '90 Minutos',
                     correct: true
                 },
                 {
                     id: 2,
-                    answer: '1 Hora',
+                    answer: '60 Minutos',
                     correct: false
                 },
                 {
                     id: 3,
-                    answer: '50 Minutos',
+                    answer: '80 Minutos',
                     correct: false
                 },
                 {
                     id: 4,
-                    answer: '36 minutos',
+                    answer: '115 Minutos',
                     correct: false
                 }]
         },
         {
 
             level: 10,
-            question: 'En qué año cayó el muro de Berlín?',
+            question: '¿En qué año cayó el muro de Berlín?',
             answers: [
                 {
                     id: 1,
@@ -2498,7 +2501,7 @@ const data = {
         {
 
             level: 10,
-            question: 'Cómo se llama la parte del ojo que es sensible a la luz?',
+            question: '¿Cómo se llama la parte del ojo que es sensible a la luz?',
             answers: [
                 {
                     id: 1,
@@ -2524,7 +2527,7 @@ const data = {
         {
 
             level: 11,
-            question: 'Cuál es la segunda estrella más próxima a la Tierra?',
+            question: '¿Cuál es la segunda estrella más próxima a la Tierra?',
             answers: [
                 {
                     id: 1,
@@ -2538,7 +2541,7 @@ const data = {
                 },
                 {
                     id: 3,
-                    answer: 'Centauri',
+                    answer: 'Alfa Centauri',
                     correct: true
                 },
                 {
@@ -2550,7 +2553,7 @@ const data = {
         {
 
             level: 11,
-            question: 'Qué es un gecko?',
+            question: '¿Qué es un gecko?',
             answers: [
                 {
                     id: 1,
@@ -2560,7 +2563,7 @@ const data = {
                 {
                     id: 2,
                     answer: 'Moneda',
-                    correct: true
+                    correct: false
                 },
                 {
                     id: 3,
@@ -2602,7 +2605,7 @@ const data = {
         {
 
             level: 11,
-            question: '¿Qué país tiene más islas en el mundo?',
+            question: 'País con mas islas en el mundo...',
             answers: [
                 {
                     id: 1,
@@ -2632,7 +2635,7 @@ const data = {
             answers: [
                 {
                     id: 1,
-                    answer: 'Murio el papa',
+                    answer: 'Murió el Papa Juan XXIII',
                     correct: false
                 },
                 {
@@ -2642,7 +2645,7 @@ const data = {
                 },
                 {
                     id: 3,
-                    answer: 'Nacio el principe carlos II',
+                    answer: 'Nació el principe carlos II',
                     correct: false
                 },
                 {
@@ -2732,7 +2735,7 @@ const data = {
         {
 
             level: 11,
-            question: '¿En la mitología griega, ¿quién era el mensajero de los dioses?',
+            question: 'En la mitología griega, ¿quién era el mensajero de los dioses?',
             answers: [
                 {
                     id: 1,
@@ -2814,7 +2817,7 @@ const data = {
             answers: [
                 {
                     id: 1,
-                    answer: 'Niccoló Paganini',
+                    answer: 'Giuseppe Tartini',
                     correct: true
                 },
                 {
@@ -2840,22 +2843,22 @@ const data = {
             answers: [
                 {
                     id: 1,
-                    answer: 'especie de cocodrilo',
+                    answer: 'Mamifero marino',
                     correct: false
                 },
                 {
                     id: 2,
-                    answer: 'Especie de ballena',
+                    answer: 'Mamiifero terrestre',
                     correct: false
                 },
                 {
                     id: 3,
-                    answer: 'Un cetaceo',
+                    answer: 'Mamiifero acuatico',
                     correct: true
                 },
                 {
                     id: 4,
-                    answer: 'un Hongo de la piel',
+                    answer: 'Mamiifero volador',
                     correct: false
                 }]
         },
@@ -2871,17 +2874,17 @@ const data = {
                 },
                 {
                     id: 2,
-                    answer: 'un metal',
+                    answer: 'Un metal',
                     correct: false
                 },
                 {
                     id: 3,
-                    answer: 'Un elemento quimico',
+                    answer: 'Un elemento químico',
                     correct: false
                 },
                 {
                     id: 4,
-                    answer: 'un mosquito',
+                    answer: 'Un mosquito',
                     correct: false
                 }]
         },
@@ -2897,7 +2900,7 @@ const data = {
                 },
                 {
                     id: 2,
-                    answer: 'orgánulos celulares',
+                    answer: 'Orgánulos celulares',
                     correct: true
                 },
                 {
@@ -2907,7 +2910,7 @@ const data = {
                 },
                 {
                     id: 4,
-                    answer: 'un organo',
+                    answer: 'Un organo',
                     correct: false
                 }]
         },
@@ -2940,7 +2943,7 @@ const data = {
         {
 
             level: 12,
-            question: '¿A qué neurotransmisor lo conocemos como “la hormona de la felicidad”?',
+            question: '¿A qué sustancia le conocemos como “la hormona de la felicidad”?',
             answers: [
                 {
                     id: 1,
@@ -2966,7 +2969,7 @@ const data = {
         {
 
             level: 12,
-            question: '¿A qué neurotransmisor lo conocemos como “la hormona de la felicidad”?',
+            question: '¿A qué neurotransmisor lo conocemos Cómo “la hormona de la felicidad”?',
             answers: [
                 {
                     id: 1,
@@ -3048,22 +3051,22 @@ const data = {
             answers: [
                 {
                     id: 1,
-                    answer: 'la radioactividad',
+                    answer: 'La radioactividad',
                     correct: true
                 },
                 {
                     id: 2,
-                    answer: 'la electricidad',
+                    answer: 'La electricidad',
                     correct: false
                 },
                 {
                     id: 3,
-                    answer: 'la gravedad',
+                    answer: 'La gravedad',
                     correct: false
                 },
                 {
                     id: 4,
-                    answer: 'la luz',
+                    answer: 'La luz',
                     correct: false
                 }]
         },
@@ -3093,6 +3096,734 @@ const data = {
                     correct: false
                 }]
         },
+        {
+            level: 13,
+            question: "¿Quién escribió el libro '1984'?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Aldous Huxley",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "George Orwell",
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: "Ray Bradbury",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Ernest Hemingway",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 13,
+            question: "¿Quién pintó 'La noche estrellada'?",
+            answer: [
+                {
+                    id: 1,
+                    answer: "Vincent van Gogh",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Leonardo da Vinci",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Pablo Picasso",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Claude Monet",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 13,
+            question: "¿Qué científico descubrió la ley de la gravedad?",
+            answer: [
+                {
+                    id: 1,
+                    answer: "Albert Einstein",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "Isaac Newton",
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: "Charles Darwin",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Stephen Hawking",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 13,
+            question: "¿Qué escritor latinoamericano ganó el Premio Nobel de Literatura en 1982?",
+            answer: [
+                {
+                    id: 1,
+                    answer: "Jorge Luis Borges",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "Gabriel García Márquez",
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: "Octavio Paz",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Mario Vargas Llosa",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 13,
+            question: "¿Cuál es la obra más famosa del escritor Gabriel García Márquez?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Cien años de soledad",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "El amor en los tiempos del cólera",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "La hojarasca",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "El coronel no tiene quien le escriba",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 13,
+            question: "¿Cuál es el monumento más visitado del mundo?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "La Torre Eiffel",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "El Coliseo Romano",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "El Taj Mahal",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "El Gran Cañón del Colorado",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 13,
+            question: "¿Cuál es el cuarto planeta del sistema solar?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Marte",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Júpiter",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Saturno",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Venus",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 13,
+            question: "¿Qué científico inventó el primer microscopio en 1674?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Robert Hooke",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Antonie van Leeuwenhoek",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Johannes Kepler",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Isaac Newton",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 14,
+            question: "¿Cuál es la obra más famosa de Leonardo da Vinci?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "La Última Cena",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "La Mona Lisa",
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: "La Creación de Adán",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "El Daiquiri",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 14,
+            question: "¿Cuál es la capital de Mongolia?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Ulan Bator",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Pekín",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Seúl",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Tokio",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 14,
+            question: "¿Qué es la constante de Planck?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Una constante matemática",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "Una constante gravitatoria",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Una constante física que relaciona la energía y la frecuencia de la radiación electromagnética",
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: "Una constante química",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 14,
+            question: "¿Cuál es la capital de Australia?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Melbourne",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "Canberra",
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: "Sydney",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Brisbane",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 14,
+            question: "¿En qué año se inauguró el Canal de Panamá?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "1914",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "1904",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "1924",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "1934",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 14,
+            question: "¿Cuál es la obra más famosa del arquitecto Antoni Gaudí?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "La Sagrada Familia",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "El Palacio de la Música Catalana",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "La Casa Batlló",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "El Parque Güell",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 14,
+            question: "¿Qué famoso poeta escribió 'El cuervo'?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Edgar Allan Poe",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "William Shakespeare",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Walt Whitman",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Robert Frost",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 14,
+            question: "¿Cuál es el título de la famosa obra de William Shakespeare en la que aparece el personaje Romeo?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Romeo y Julieta",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Hamlet",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Macbeth",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Otelo",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 14,
+            question: "¿Qué artista pintó el techo de la Capilla Sixtina?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Miguel Ángel",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Leonardo da Vinci",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Rafael",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Sandro Botticelli",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 14,
+            question: "¿Qué artista pintó el techo de la Capilla Sixtina?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Miguel Ángel",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Leonardo da Vinci",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Rafael",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Sandro Botticelli",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 15,
+            question: "¿Quién escribió la obra 'La metamorfosis'?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Franz Kafka",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Jorge Luis Borges",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Gabriel García Márquez",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Mario Vargas Llosa",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 15,
+            question: "¿Qué líder militar llevó a cabo la conquista de los incas en el siglo XVI?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Francisco Pizarro",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Hernán Cortés",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Juan Ponce de León",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Vasco Núñez de Balboa",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 15,
+            question: "¿Qué líder político y militar lideró el movimiento de independencia de Haití en el siglo XIX?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Toussaint Louverture",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Simón Bolívar",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "José de San Martín",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Miguel Hidalgo",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 15,
+            question: "¿Qué evento histórico dio inicio a la Primera Guerra Mundial?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "El asesinato del archiduque Francisco Fernando de Austria-Hungría",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "La invasión de Polonia por parte de Alemania",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "La firma del Tratado de Versalles",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "El ataque japonés a Pearl Harbor",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 15,
+            question: "¿Cuál fue el nombre del líder de la Unión Soviética durante la Guerra Fría?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Nikita Jruschov",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "Joseph Stalin",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Leonid Brezhnev",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Mijaíl Gorbachov",
+                    correct: true
+                }
+            ]
+        },
+        {
+            level: 15,
+            question: "¿Qué líder político lideró la Revolución Francesa en el siglo XVIII?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Napoleón Bonaparte",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "Max",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Robespierre",
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: "Marie Antoinette",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 15,
+            question: "¿Quién fue el líder del Movimiento por los Derechos Civiles de EE. UU. en la década de 1960?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Malcolm X",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "Martin Luther King Jr.",
+                    correct: true
+                },
+                {
+                    id: 3,
+                    answer: "Thurgood Marshall",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Rosa Parks",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 15,
+            question: "¿Cuál fue la causa principal de la Guerra de los Cien Años entre Francia e Inglaterra?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Disputas comerciales",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "Luchas religiosas",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Reclamos territoriales",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Reclamos sucesorios",
+                    correct: true
+                }
+            ]
+        },
+        {
+            level: 15,
+            question: "¿Qué evento histórico condujo a la creación del Estado de Israel en 1948?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "La Segunda Guerra Mundial",
+                    correct: false
+                },
+                {
+                    id: 2,
+                    answer: "El Holocausto",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "La partición de Palestina por parte de las Naciones Unidas",
+                    correct: true
+                },
+                {
+                    id: 4,
+                    answer: "El Acuerdo Sykes-Picot",
+                    correct: false
+                }
+            ]
+        },
+        {
+            level: 15,
+            question: "¿Qué líder político africano jugó un papel clave en la lucha contra el apartheid en Sudáfrica?",
+            answers: [
+                {
+                    id: 1,
+                    answer: "Nelson Mandela",
+                    correct: true
+                },
+                {
+                    id: 2,
+                    answer: "Kwame Nkrumah",
+                    correct: false
+                },
+                {
+                    id: 3,
+                    answer: "Haile Selassie",
+                    correct: false
+                },
+                {
+                    id: 4,
+                    answer: "Jomo Kenyatta",
+                    correct: false
+                }
+            ]
+        }
     ]
 }
 

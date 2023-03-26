@@ -1,36 +1,18 @@
 //imports
 import { Howl } from 'howler';
-import { useEffect, useState } from 'react';
 //import Styles
 import '../styles/question.css';
 //import Images
 import selectedLE from '../assets/images/bg-option-left-wrong.png';
 import selectedRI from '../assets/images/bg-option-right-wrong.png';
-import CorrectLe from '../assets/images/bg-option-left-correct.png';
-import CorrectRi from '../assets/images/bg-option-right-correct.png';
 //import Audio
-import audioWin from '../assets/sounds/win.mp3';
-import audioLose from '../assets/sounds/lose.mp3';
 import audioWho from '../assets/sounds/who-was-correct.mp3';
 
-export default function Question({ quest, handleNextQuestion, recibeClick, soundBg }) {
+export default function Question({ quest,  setAnsSelected, setAnsCorrect, setId }) {
 
     //Variables
     const { question, answers } = quest;
     const verifyClick = true;
-
-    const soundWin = new Howl({
-        src: [audioWin],
-        playing: false,
-        volume: 0.05,
-        loop: false
-    })
-    const soundLose = new Howl({
-        src: [audioLose],
-        playing: false,
-        volume: 0.05,
-        loop: false
-    })
 
     const soundWho = new Howl({
         src: [audioWho],
@@ -38,11 +20,6 @@ export default function Question({ quest, handleNextQuestion, recibeClick, sound
         volume: 0.05,
         loop: false,
     })
-
-    soundBg.once('load', () => {
-        soundBg.play();
-    }
-    );
 
     //Functions
     function handleSelectAnswer(e) {
@@ -58,13 +35,12 @@ export default function Question({ quest, handleNextQuestion, recibeClick, sound
                 }
             });
         };
-        const result = handleSelected(answerSelect, ansCorrect);
-        handleNextQuestion(result);
-        handleAudio(result);
-        resetValues();
+        setAnsSelected(handleSelected(answerSelect));
+        setAnsCorrect(ansCorrect);
+        setId(answerSelect);
     }
 
-    function handleSelected(id, ansCorrect) {
+    function handleSelected(id) {
         soundWho.play();
         switch (id) {
             case '1':
@@ -72,135 +48,29 @@ export default function Question({ quest, handleNextQuestion, recibeClick, sound
                 document.getElementById('ans2').style.backgroundImage = ``;
                 document.getElementById('ans3').style.backgroundImage = ``;
                 document.getElementById('ans4').style.backgroundImage = ``;
-                if (ansCorrect === '1') {
-                    setTimeout(() => {
-                        document.getElementById('ans1').style.backgroundImage = `url(${CorrectLe})`;
-                    }, 5000);
-                    return true;
-                } else if (ansCorrect === '2') {
-                    setTimeout(() => {
-                        document.getElementById('ans1').style.backgroundImage = `url(${selectedLE})`;
-                        document.getElementById('ans2').style.backgroundImage = `url(${CorrectRi})`;
-                    }, 5000);
-                } else if (ansCorrect === '3') {
-                    setTimeout(() => {
-                        document.getElementById('ans1').style.backgroundImage = `url(${selectedLE})`;
-                        document.getElementById('ans3').style.backgroundImage = `url(${CorrectLe})`;
-                    }, 5000);
-                } else if (ansCorrect === '4') {
-                    setTimeout(() => {
-                        document.getElementById('ans1').style.backgroundImage = `url(${selectedLE})`;
-                        document.getElementById('ans4').style.backgroundImage = `url(${CorrectRi})`;
-                    }, 5000);
-                }
                 break;
             case '2':
                 document.getElementById('ans2').style.backgroundImage = `url(${selectedRI})`;
                 document.getElementById('ans1').style.backgroundImage = ``;
                 document.getElementById('ans3').style.backgroundImage = ``;
                 document.getElementById('ans4').style.backgroundImage = ``;
-                if (ansCorrect === '2') {
-                    setTimeout(() => {
-                        document.getElementById('ans2').style.backgroundImage = `url(${CorrectRi})`;
-                    }, 5000);
-                    return true;
-                } else if (ansCorrect === '1') {
-                    setTimeout(() => {
-                        document.getElementById('ans2').style.backgroundImage = `url(${selectedRI})`;
-                        document.getElementById('ans1').style.backgroundImage = `url(${CorrectLe})`;
-                    }, 5000);
-                } else if (ansCorrect === '3') {
-                    setTimeout(() => {
-                        document.getElementById('ans2').style.backgroundImage = `url(${selectedRI})`;
-                        document.getElementById('ans3').style.backgroundImage = `url(${CorrectLe})`;
-                    }, 5000);
-                } else if (ansCorrect === '4') {
-                    setTimeout(() => {
-                        document.getElementById('ans2').style.backgroundImage = `url(${selectedRI})`;
-                        document.getElementById('ans4').style.backgroundImage = `url(${CorrectRi})`;
-                    }, 5000);
-                }
                 break;
             case '3':
                 document.getElementById('ans3').style.backgroundImage = `url(${selectedLE})`;
                 document.getElementById('ans1').style.backgroundImage = ``;
                 document.getElementById('ans2').style.backgroundImage = ``;
                 document.getElementById('ans4').style.backgroundImage = ``;
-                if (ansCorrect === '3') {
-                    setTimeout(() => {
-                        document.getElementById('ans3').style.backgroundImage = `url(${CorrectLe})`;
-                    }, 5000);
-                    return true;
-                } else if (ansCorrect === '1') {
-                    setTimeout(() => {
-                        document.getElementById('ans3').style.backgroundImage = `url(${selectedLE})`;
-                        document.getElementById('ans1').style.backgroundImage = `url(${CorrectLe})`;
-                    }, 5000);
-                } else if (ansCorrect === '2') {
-                    setTimeout(() => {
-                        document.getElementById('ans3').style.backgroundImage = `url(${selectedLE})`;
-                        document.getElementById('ans2').style.backgroundImage = `url(${CorrectRi})`;
-                    }, 5000);
-                } else if (ansCorrect === '4') {
-                    setTimeout(() => {
-                        document.getElementById('ans3').style.backgroundImage = `url(${selectedLE})`;
-                        document.getElementById('ans4').style.backgroundImage = `url(${CorrectRi})`;
-                    }, 5000);
-                }
+                
                 break;
             case '4':
                 document.getElementById('ans4').style.backgroundImage = `url(${selectedRI})`;
                 document.getElementById('ans1').style.backgroundImage = ``;
                 document.getElementById('ans2').style.backgroundImage = ``;
                 document.getElementById('ans3').style.backgroundImage = ``;
-                if (ansCorrect === '4') {
-                    setTimeout(() => {
-                        document.getElementById('ans4').style.backgroundImage = `url(${CorrectRi})`;
-                    }, 5000);
-                    return true;
-                } else if (ansCorrect === '1') {
-                    setTimeout(() => {
-                        document.getElementById('ans4').style.backgroundImage = `url(${selectedRI})`;
-                        document.getElementById('ans1').style.backgroundImage = `url(${CorrectLe})`;
-                    }, 5000);
-                } else if (ansCorrect === '2') {
-                    setTimeout(() => {
-                        document.getElementById('ans4').style.backgroundImage = `url(${selectedRI})`;
-                        document.getElementById('ans2').style.backgroundImage = `url(${CorrectRi})`;
-                    }, 5000);
-                } else if (ansCorrect === '3') {
-                    setTimeout(() => {
-                        document.getElementById('ans4').style.backgroundImage = `url(${selectedRI})`;
-                        document.getElementById('ans3').style.backgroundImage = `url(${CorrectLe})`;
-                    }, 5000);
-                }
                 break;
         }
+        return true;
     }
-
-    function handleAudio(result) {
-        if (result) {
-            setTimeout(() => {
-                soundWin.play();
-            }, 4000);
-        } else {
-            setTimeout(() => {
-                soundLose.play();
-            }, 4000);
-        }
-    }
-
-    function resetValues() {
-        setTimeout(() => {
-            soundWin.stop();
-            soundLose.stop();
-            document.getElementById('ans1').style.backgroundImage = ``;
-            document.getElementById('ans2').style.backgroundImage = ``;
-            document.getElementById('ans3').style.backgroundImage = ``;
-            document.getElementById('ans4').style.backgroundImage = ``;
-        }, 12000);
-    }
-
 
     return (
         <>
@@ -209,7 +79,7 @@ export default function Question({ quest, handleNextQuestion, recibeClick, sound
                     <h2>{question}</h2>
                 </div>
             </div>
-            <div className='container_answers' onClick={(e) => { handleSelectAnswer(e); recibeClick(verifyClick); }} id='container_answers'>
+            <div className='container_answers' onClick={(e) =>  handleSelectAnswer(e)} id='container_answers'>
                 {
                     answers.map(({ id, answer, correct }) => {
                         switch (id) {

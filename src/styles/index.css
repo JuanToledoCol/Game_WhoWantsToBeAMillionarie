@@ -46,6 +46,13 @@
     border-radius: 30px;
 }
 
+.marca{
+    width: 40%;
+    height: 230px;
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
 /*Container of name*/
 .container_name{
     width: 100%;

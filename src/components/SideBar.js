@@ -1,5 +1,3 @@
-//import React
-import { useState, useEffect } from 'react';
 //import Css
 import '../styles/sideBar.css';
 //import Data
